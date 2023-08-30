@@ -10,17 +10,25 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "user_tb")
 public class User {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
-	private Long id; 
-	
-	@Column(name = "name")
-	private String userName;
-	
-	@Column(name = "email")
-	private String userEmail;
+	private Long id;
+
+	private String name;
+
+	private String email;
+
+	public User() {
+		super();
+	}
+
+	public User(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
+	}
 
 	public Long getId() {
 		return id;
@@ -30,37 +38,25 @@ public class User {
 		this.id = id;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getName() {
+		return name;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getUserEmail() {
-		return userEmail;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUserEmail(String serEmail) {
-		this.userEmail = serEmail;
-	}
-
-	public User(String userName, String userEmail) {
-		super();
-		this.userName = userName;
-		this.userEmail = userEmail;
-	}
-
-	public User() {
-		// TODO Auto-generated constructor stub
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", userName=" + userName + ", userEmail=" + userEmail + "]";
+		return "User [id=" + id + ", name=" + name + ", email=" + email + "]";
 	}
-	
-	
-	
+
 }
