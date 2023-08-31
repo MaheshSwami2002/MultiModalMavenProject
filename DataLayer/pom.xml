@@ -1,13 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.app</groupId>
-    <artifactId>ParentApplication</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    
-  </parent>
-  <artifactId>DataLayer</artifactId>
-  <name>DataLayer</name>
-  <description>data access layer </description>
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.app</groupId>
+		<artifactId>ParentApplication</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<artifactId>DataLayer</artifactId>
+	<packaging>jar</packaging>
+	<name>DataLayer</name>
+	<description>data access layer </description>
+
 </project>

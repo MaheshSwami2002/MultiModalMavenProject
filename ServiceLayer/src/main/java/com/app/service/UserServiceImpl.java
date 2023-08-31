@@ -8,19 +8,18 @@ import com.app.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {
-	
+
 	@Autowired
 	UserRepository uRepo;
-	
+
 	@Override
 	public User SaveUser(User user) {
-		
+
 		User newUser = new User();
-		newUser.setUserName(user.getUserName());
-		newUser.setUserEmail(user.getUserEmail());
+		newUser.setName(user.getName());
+		newUser.setEmail(user.getEmail());
 		User user1 = uRepo.save(newUser);
-		
-		
+
 		return user1;
 	}
 
